@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: palevioletred;
+    color: purple
+}
+
+div {
+    border: 3px solid purple;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+span {
+    font-size: 150%;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pracownik</title>
+</head>
+<body>
+    <h1>Akta pracownicze</h1>
+    <div>
+        <span style="text-decoration: underline;">dane</span>
+        <p>{{pracownik.imie}} {{pracownik.nazwisko}}</p>
+    </div>
+    <div>
+        <span style="text-decoration: underline;">adres</span>
+        <p>{{pracownik.adres}} {{pracownik.miasto}}</p>
+    </div>
+    <div>
+        <span style="text-decoration: underline;">stanowisko</span>
+        <p>{{pracownik.stanowiska_id}}</p>
+    </div>
+</body>
+</html>

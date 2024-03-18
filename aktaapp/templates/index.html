@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Liczba zatrudnionych pracowników {{ p_count }}</h1>
+
+        <ol>
+            {% for pracownik in pracownicy %}
+            <li>{{ pracownik.imie }} {{ pracownik.nazwisko }} <a href="detail/{{pracownik.id}}">szczegóły</a></li>
+            {% endfor %}
+        </ol>
+</body>
+</html>
